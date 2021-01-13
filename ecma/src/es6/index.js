@@ -36,12 +36,25 @@ console.log(loremTwo);
 
 //destructuracion de elementos
 let person = {
-    'name': 'enrique',
-    'age': 26,
-    'country': 'MX' 
+    nombre: 'enrique',
+    edad: 26,
+    ciudad: 'MX' 
 }
 
-console.log(person.name, person.age, person.country);
+console.log(person.nombre, person.edad, person.ciudad);
 
-let {name, age, country} = person2;
-console.log(name, age, country);
+console.log('MOSTRANDO PROPIEDADES DEL OBJETO PERSON CON es6')
+let { nombre, edad, ciudad } = person;
+console.log(nombre, edad, ciudad);
+
+{
+    globalVar = 'Global var'
+}
+
+{
+    globalLet = 'Global let'
+}
+
+console.log(globalVar);
+console.log(globalLet);
+
