@@ -58,3 +58,24 @@ console.log(nombre, edad, ciudad);
 console.log(globalVar);
 console.log(globalLet);
 
+let name = 'Enrique'
+let age = 26
+
+obj = {name: name, age: age} 
+
+obj2 = {name, age}
+
+console.log(obj);
+console.log(obj2);
+
+//Arrow function
+const people = [
+    {name: 'Enrique', age: 26},
+    {name : 'Luis', age: 36}
+]
+
+let listOfNames = people.map(function (item) {
+    console.log(item.name);
+})
+
+let listOfNames2 = people.map(item => console.log(item.name))
