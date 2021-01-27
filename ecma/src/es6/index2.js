@@ -33,7 +33,7 @@ const listOfPeople4 = name => {
 
 //es6
 const square = num => num * num;
-*/
+
 
 const helloPromise = () => {
     return new Promise((resolve, reject) => {
@@ -49,3 +49,20 @@ helloPromise()
 .then(response => console.log(response))
 .then(() => console.log('Este es el segundo then'))
 .catch(error => console.log(error));
+*/
+
+class calculator {
+    constructor(){
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+    //metodo sum
+    sum(valueA,valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + valueB;
+    }
+}
+
+const calc = new calculator();
+console.log(calc.sum(5,10));
