@@ -66,3 +66,8 @@ class calculator {
 
 const calc = new calculator();
 console.log(calc.sum(5,10));
+
+
+import { hello }  from './module';
+
+hello();
