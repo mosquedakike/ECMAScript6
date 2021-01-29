@@ -14,3 +14,8 @@ console.log(entries.length);
 const values = Object.values(data)
 console.log(values);
 console.log(values.length);
+
+//padStart & padEnd
+const cadena = 'hello'
+console.log(cadena.padStart(7,'hi'));
+console.log(cadena.padEnd(12,'------------'));
